@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+<!--this is a comment in HTML-->
+<!--<head> loads first, tells browser info about how to interpret our page-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="-J Bowe">
+    <meta name="description" content="W2D1 Demo"> 
+
+    <title>Week2 | Demo #1 </title>
+</head>
+<body style="background-color:lavender"> 
+
+<p>Take us to the bottom <a href="#W2">W2</a> of the page.</p>   
+    
+<!--The <body> element holds ALL  CONTENT FOR THE PAGE!-->
+<!--there should only ever be ONE <head> and ONE <body>-->
+
+    <!--Block Level elements: building blocks of page! create main structure(both organizational and content-wise)-->
+
+    <!--headings [1-6] are just like heading style in Word-->
+    <h1 id="Top" style="border: 10px dotted red">Heading 1</h1> <!--ONLY ONE PER PAGE for SEO(Search Engine Optimization)-->
+    <h2 style="border: 10px dashed green">Heading 2</h2>
+    <h3 style="border: 10px groove blue">Heading 3</h3>
+    <h4 style="border: 10px inset rgb(129, 9, 129)">Heading 4</h4>
+    <h5 style="border: 10px outset rgb(205, 223, 250)">Heading 5</h5>
+    <h6 style="border: 10px double rgb(27, 150, 113)">Heading 6</h6>
+
+    <!--HORIZONTAL RULE below <h4> : creates seperation between sections of page--> 
+    <hr style="border: 20px groove rgba(241, 50, 184, 0.514)">
+
+    <!--DIVs are dividers/divisions - they do not contain "content", they contain and help organize other HTML elements-->
+    <div style="background-color: black; color:aliceblue;">
+        <h2 id="Lists" style="font-family:Georgia, 'Times New Roman', Times, serif"> List Types in HTML</h2>
+
+        <!--ordered list-->
+        <ol>
+            <!--add a list item for each item in the list-->
+            <li style="font-family: Georgia, 'Times New Roman', Times, serif;">Watching Anime</li>
+            <li style="font-family: Georgia, 'Times New Roman', Times, serif;">Gaming</li>
+            <li style="font-family: Georgia, 'Times New Roman', Times, serif;">Reading until 6 a.m.</li>
+        </ol>
+
+        <!--Unordered List-->
+        <ul>
+        <!--add a list item for each line item in the list-->
+            <h3>Pets I Will Have One Day!</h3>
+            <li style="font-family: Georgia, 'Times New Roman', Times, serif;">Rabbit</li>
+            <li style="font-family: Georgia, 'Times New Roman', Times, serif;">Ferret</li>
+            <li style="font-family: Georgia, 'Times New Roman', Times, serif;">Fennec Fox</li>
+            <li style="font-family: Georgia, 'Times New Roman', Times, serif;">Red Panda</li>
+        </ul>
+
+    </div>
+    <hr>
+    <h2 style="font-family: Georgia, 'Times New Roman', Times, serif;">Basic Paragraph Text + In-Line Tags</h2>
+
+    <!--in line elements do NOT create structure, they are used *in line* of another HTML element! they usually add visual style or emphasis, help support SEO, or support data management-->
+
+    <!--<p> for paragraph (block level element)-->
+    <p style="font-family: Georgia, 'Times New Roman', Times, serif;color: crimson;">Hello my name is <b>Jayda</b> and I have a cat named Zen<i>(she bites a lot :C )</i>. I have two siblings <i>(who also bite :C)</i>.
+    <br><!--break space - creates a new empty line-->
+    <u>I still like them though I guess.</u>
+    </p><!--<b> is to bold, <i> is italics and <u> is underline-->
+
+    <!--in lines for SEO support (Search Engine Optimization)-->
+    <p style="font-family: Georgia, 'Times New Roman', Times, serif;">The <strong>strong</strong> tag makes content appear bolded.</p>
+    <p style="font-family: Georgia, 'Times New Roman', Times, serif;">The <em>emphasis</em> tag makes content appear italicized.</p>
+    
+    <p style="font-family: Georgia, 'Times New Roman', Times, serif; font-size: 50px;"><b><i><u>C O M B O</u></i></b></p>
+
+
+    <hr>
+    <!--continuing into Week 2 with basic tags :D-->
+    <h2 id="W2">W2D1 - Intro to img, a, and id attributes</h2>
+
+    <!--add a link to neit.edu-->
+    <!--this is an example of an ABSOLUTE pathh (starts with protocol)-->
+
+    <h4>Check out my school's website: <a href="https://www.neit.edu" target="_blank">neit.edu</a>.</h4>
+    <!--target="_blank" opens a link in a new tab-->
+
+    <!--link to our W1 demo webpage-->
+    <!--since this week2 folder lives within a larger "SE111_202530" folder, we can create a RELATIVE paths to other content housed within "SE111_202530"-->
+
+    <p>My first HTML demo can be found <a href="../../week1/demo/index.html" target="_blank">here</a> for your review.</p>
+
+    <p>Take us back to the <a href="#top">top</a> top of the page</p>
+    <p>Take us to the <a href="#Lists">lists</a> of the page</p>
+
+    <hr>
+
+    <h2 style="color: blueviolet; font-family: Georgia, 'Times New Roman', Times, serif;">Images!</h2>
+
+    <img src="../W2D2/images/meca.jpg" alt="The front entrance of MECA;s Porteous Building" width="500px" title="MECA!">
+
+    <!--Avoid absolute image paths (we have less contorl!)-->
+
+
+</body>
+</html>
