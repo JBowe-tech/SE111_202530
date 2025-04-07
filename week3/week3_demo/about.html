@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="-J Bowe">
+    <meta name="description" content="W3 Demo - Multiple Pages">
+
+    <title>W3 | The Last of Us</title>
+
+    <!--IN DOCUMENT CSS BELOW-->
+    <style>
+        /*we are now writing CSS in this element. This is how you comment in CSS.*/
+
+        /*selecting elements by thier tag type.*/
+        body{
+            background-color:gray ; font-family: Georgia, 'Times New Roman', Times, serif;
+
+        }
+
+        div {
+            /*these style changes will apply to ALL divs in the page! When selecting by tags of that type are affected*/
+            border: 1px solid black;
+            /*padding adds space between content and border*/
+            padding:10px; /*applies to all 4 sides; top, right, bottom, left*/
+
+            /*margin adds space between border and other elements*/
+            margin: 10px; /*applies to all 4 sides; top, right, bottom, left*/
+
+        }
+
+        /*selecting an element by its #ID!*/
+        #wrapper{
+            width:auto; /*equal left and right space when width is applied*/
+
+            background-color: whitesmoke ;
+            color:darkorchid; font-family: Georgia, 'Times New Roman', Times, serif;/*color changes FONT color! */
+        }
+
+        /*selecting a group by its .CLASS name*/
+        .border {
+            border:1px solid rgb(59, 8, 30) ;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <!--#wrapper div to "wrap around" all content of the page-->
+    <div id="wrapper">
+
+        <!--#HEADER-->
+        <div id="header" class="border fancy"> <!--These are two different classes border and fancy.-->
+            <h1 id="title">The Last of Us</h1>
+
+        </div><!--/ #header-->
+
+
+        <!--#NAV-->
+        <div id="nav">
+
+            <!--use relative link paths for pages inside of your site-->
+            <a href="index.html" class="link">HOME</a>
+            <a href="people.html" class="link">ABOUT</a>
+            <a href="people.html" class="link">PEOPLE</a>
+            <a href="places.html" class="link">PLACES</a>
+
+
+        </div><!--/ #navigation-->
+
+
+        <!--#CONTENT-->
+        <div id="content">
+            <h2>About Page</h2>
+
+        </div><!--/ #content-->
+
+
+        <!--#FOOTER-->
+        <div id="footer" class="border">
+            <p>&copy; J BOWE | SE111.05 | Spring 2025</p>
+
+        </div><!--/#footer-->
+
+
+    </div><!--/ #wrapper-->
+    
+</body>
+</html>
