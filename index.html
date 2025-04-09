@@ -3,10 +3,145 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NETLIFY</title>
+
+    <meta name="author" content="J Bowe">
+    <meta name="description" content="main course repo index">
+
+    <title>Jayda's Repo Index</title>
+
+    
+            <!--in-document styling - stated one time in the document, applies to anything selected in the document!-->
+            <style>
+                body {
+                    font-family:Calibri, sans-serif;
+                    background-color:lightslategray;
+                }
+        
+                #wrapper {
+                    background-color:lightgrey;
+                    width:900px;
+                    padding:25px; /*i add space inside of the lement's border*/
+                    margin:auto;/*i aauto center the element in the page*/
+                    border:2px solid black;
+                    box-shadow: 2px 2px 2px black; /*i add a drop shadow!*/
+                    border-radius:10px; /*i round rectangle corners!*/
+                    /*margin-top:10px; /*i move the element away from the top of the browser chrome*/
+                
+                }
+        
+                #header, #content, #footer {
+        
+                    padding:15px;
+                    margin:20px;
+                }
+        
+                img {
+        
+                    width:400px;
+                    border:1px solid lightgrey
+                }
+        
+                #header {
+        
+                    text-align:center;
+                }
+        
+                #footer {
+                    font-size:10px;
+                    text-align:center;
+                }
+        
+                a:hover {
+                    background-color:white;
+                }
+
+                .done {
+                    font-weight:bold;
+                    color:rgb(2, 121, 2);
+                }
+
+                .soon {
+                    color:rgb(118, 1, 1);
+                }
+            </style>
 </head>
-<h1>FIRST PAGE FOR NETLIFY</h1>
 <body>
+    <!--all viewable page content belongs in the body element-->
+    <div id="wrapper">
+
+        <!--HEADER--------------------------------------------->
+        <div id="header">
+            <h1>&#9733; &#9733; &#9733; Hello World! &#9733; &#9733; &#9733;</h1> 
+            <h2>Welcome to my SE111 Resource Directory :]</h2>
+            <h4>If something is missing that you need, please send me an email: kmtruchon@neit.edu</h4>
+            <p><i>Remember ... you can also reveal the code to any of these pages directly in browser by hitting the F12 key or opening the Developer Tools in your browser's options.</i></p>
+
+        </div><!--/ #header-->         
+            
+
+
+        <!--NAVIGATION----------------------------------------->
+        <div id="nav" style="text-align: center;">
+            <!--EXTERNAL link examples (going outside of our site; absolute path example)-->
+            <h4>Check out my <a href="https://github.com/JBowe-tech/SE111_202530" target="_blank">Github Remote Repo here!</a> | <a href="https://validator.w3.org/" target="_blank">The W3C Validator</a></h4>
+        </div>
+        <!--MAIN BODY/CONTENT---------------------------------->
+        <div id="main">
+
+            <!--this section is populated with RELATIVE links, ones which are found in the same directory as *this* index.html file-->
+
+            <!--week #1 links -->
+            <div id="week1" class="week">
+
+                <h3>Week #1</h3>
+
+                <ul>
+                    <li><a href="week1/demo/index.html">W1D2 | Basic Tags Demo</a></li>
+                    <li><a href="week1/w1/index.html">W1 | First Web Page [Solution Available after 4.1]</a></li>
+                </ul>
+
+                <hr>
+
+            </div>
+
+            <!--week #2 links -->
+            <div id="week2" class="week">
+
+                <h3>Week #2</h3>
+
+                <ul>
+                    <li><a href="week2/W2D1/index.html">W2D1 | More Basic Tags Demo</a></li>
+                    <li><a href="week2/demo/W2D2/index.html">W2D2 | Web Page Anatomy + Bio Start</a></li>
+                    <li><a href="week2/file-paths-incorrect/file-paths-incorrect/index.html">W2 | Incorrect File Paths</a></li>
+                    <li><a href="week2/file-paths-correct/file-paths-correct/index.html">W2 | Correct File Paths</a></li>
+                    <li><a href="week2/w2/index.html">W2 | Bio Page</a></li>
+                </ul>
+
+                <hr>
+
+            </div>
+
+            <!--week #3 links -->
+            <div id="week3" class="week">
+
+                <h3>Week #3</h3>
+
+                <ul>
+                    <li><a href="week3/week3_demo/index.html">W3D1 | Multi-Page Sites & Mainframe Demo</a></li>
+                    <li><a href="">W3D2 | Mainframe Practice Demo</a></li>
+                    <li><a href="week3/week3_demo/w3_bio/index.html">W3 | Multi-Page Bio</a></li>
+                </ul>
+
+                <hr>
+
+            </div>
+
+        </div>
+        <!--FOOTER--------------------------------------------->
+        <div id="footer">
+            <p>&copy; J Bowe | SE111 | Spring 2025</p>
+        </div>
+    </div>
     
 </body>
 </html>
