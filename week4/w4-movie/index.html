@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="-J Bowe">
+    <meta name="description" content="W4 Demo - Movie Site">
+
+    <title>W4 | Movie Site</title>
+
+    <style>
+        /*we are now writing CSS in this element. This is how you comment in CSS.*/
+
+        /*selecting elements by thier tag type.*/
+        body{
+            background-color:lightsteelblue ; font-family: Georgia, 'Times New Roman', Times, serif;
+
+        }
+
+        div {
+            /*these style changes will apply to ALL divs in the page! When selecting by tags of that type are affected*/
+            border: 1px solid black;
+            /*padding adds space between content and border*/
+            padding:10px; /*applies to all 4 sides; top, right, bottom, left*/
+
+            /*margin adds space between border and other elements*/
+            margin: 10px; /*applies to all 4 sides; top, right, bottom, left*/
+
+        }
+
+        /*selecting an element by its #ID!*/
+        #wrapper{
+            width:auto; /*equal left and right space when width is applied*/
+
+            background-color: rgb(255, 255, 255) ;
+            color:darkorchid; font-family: Georgia, 'Times New Roman', Times, serif;/*color changes FONT color! */
+        }
+
+        /*selecting a group by its .CLASS name*/
+        .border {
+            border:1px solid rgb(59, 8, 30) ;
+        }
+
+    </style>
+
+   </head>
+
+   <body>
+
+    <div id="wrapper">
+
+        <!--Header-->
+        <div id="header">
+            <h1><em>Fairy Tail: Dragon Cry</em></h1>
+            <h4><i>"Quote from movie"</i></h4>
+
+        </div>
+
+        <!--Navigation-->
+        <div id="nav">
+            <!--Relative links to all three site pages-->
+            <a href="index.html" class="nav-btn">Home</a>
+            <a href="cast.html" class="nav-btn">Cast</a>
+            <a href="review.html" class="nav-btn">Review</a>
+        </div>
+
+        <!--Content-->
+        <div id="content">
+            <h2>All About <em>Movie I choose</em></h2>
+        </div>
+
+        <!--Main Content-->
+        <div id="main-content">
+
+            <p><i>brief 1-2 sentences summary of <em>movie</em></i></p>
+
+            <img src="images/DragonCRy.jpg" alt="The offical Movie Poster for Fairy Tail Dragon Cry (2017)" style="width:90%;">
+
+            <div class="info">
+                <p><b>LABEL:</b></p>
+                <p><b>RATING:</b></p>
+                <p><b>GENRE:</b></p>
+                <p><b>RUN TIME:</b></p>
+                <p><b>RELEASE DATE:</b></p>
+                <p><b>PRODUCTION COMPANY:</b></p>
+            </div>
+
+
+
+        </div>
+        
+        <!--Footer-->
+        <div id="footer">
+
+            <a href="#wrapper">Back to Top</a> <br>
+
+            <p>&copy; J BOWE | SE111.05 | Spring 2025</p>
+
+             <!--VALIDATION SCREENSHOT IMAGE BELOW-->
+        <img src="" alt="validation of page" style="width:100%">
+
+        </div>
+
+    </div>
+
+   </body>
+
+</html>
