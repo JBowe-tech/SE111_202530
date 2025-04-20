@@ -9,12 +9,14 @@
 
     <title>W4 | Movie Site</title>
 
+    <!--IN DOCUMENT CSS - helps check the mainframe wireframe-->
     <style>
         /*we are now writing CSS in this element. This is how you comment in CSS.*/
 
         /*selecting elements by thier tag type.*/
         body{
-            background-color:lightsteelblue ; font-family: Georgia, 'Times New Roman', Times, serif;
+            background-color:aliceblue ; font-family: Georgia, 'Times New Roman', Times, serif;
+            background-image: url('images/13783.jpg');
 
         }
 
@@ -34,15 +36,76 @@
             width:auto; /*equal left and right space when width is applied*/
 
             background-color: rgb(255, 255, 255) ;
-            color:darkorchid; font-family: Georgia, 'Times New Roman', Times, serif;/*color changes FONT color! */
+            color:rgb(86, 20, 119); font-family: Georgia, 'Times New Roman', Times, serif;/*color changes FONT color! */
+
+            width: 980px;
+            margin:auto; 
+
+            padding: 10px;
+        }
+
+        #nav {
+
+            border: 2px solid slateblue;
+            padding: 10px;
+            margin: 10px;
+
+            border-radius: 100px;
+
+            box-shadow: 5px 5px 3px rgb(58, 58, 58);
+
+        }
+
+        #buttons{
+
+            border: 1px solid plum;
+            height: 50px;
+
+            width: 510px;
+            margin: auto;
+
+        }
+
+        .nav-btn{
+
+            width: 150px;
+            height: 50px;
+
+            text-align: center; /*x-axis alighnment*/
+            line-height: 50px; /*y-axis nalignment, Must match height value if vertically centering*/
+
+            background-color:rgb(182, 130, 208);
+
+            float: left;
+            display: block;
+
+            margin-right: 10px;
+            margin-left: 10px;
+
+            text-decoration: none;
+
+            font-size: 24px;
+
+            font-family: Georgia, 'Times New Roman', Times, serif;
+
+        }
+
+        .nav-btn:hover{
+
+            background-color: blue;
+            color: rgb(120, 83, 13);
+
+            font-style: italic;
+
+            background-image: url('images/13783.jpg');
+
         }
 
         /*selecting a group by its .CLASS name*/
         .border {
             border:1px solid rgb(59, 8, 30) ;
         }
-
-    </style>
+        </style>
 
    </head>
 
@@ -53,16 +116,18 @@
         <!--Header-->
         <div id="header">
             <h1><em>Fairy Tail: Dragon Cry</em></h1>
-            <h4><i>"Quote from movie"</i></h4>
-
         </div>
 
         <!--Navigation-->
         <div id="nav">
+            <div id="buttons">
+
             <!--Relative links to all three site pages-->
-            <a href="index.html" class="nav-btn">Home</a>
-            <a href="cast.html" class="nav-btn">Cast</a>
-            <a href="review.html" class="nav-btn">Review</a>
+            <a href="index.html" class="nav-btn">HOME</a>
+            <a href="cast.html" class="nav-btn">CAST</a>
+            <a href="review.html" class="nav-btn">REVIEW</a>
+            </div>
+
         </div>
 
         <!--Content-->
@@ -77,36 +142,67 @@
                 <!--Actor 1-->
                 <h3>Character Name: Lucy Heartfilia</h3>
 
-                <img src="images/Cherami L..webp" alt="headshot of Cherami L. the voice actress of Lucy Heartfilia." height="50">
+                <img src="images/Cherami.webp" alt="headshot of Cherami L. the voice actress of Lucy Heartfilia." height="50">
+                <img src="images/Lucy.jpg" alt="Lucy Heartfilia" height="50">
 
-                <p>Cherami L.</p>
+                <p>Cherami Leigh</p>
 
                 <hr><!--Actor 2-->
 
-
                 <h3>Character Name: Erza Scarlet</h3>
 
-                <img src="images/Colleen C..webp" alt="headshot of Colleen C. the voice actress of Erza Scarlet." height="50">
+                <img src="images/Colleen.webp" alt="headshot of Colleen C. the voice actress of Erza Scarlet." height="50">
+                <img src="images/Erza.jpg" alt="Erza Scarlet" height="50">
 
-                <p>Colleen C.</p>
+
+                <p>Colleen Clinkenbeard</p>
 
                 <hr><!--Actor 3-->
 
                 <h3>Character Name: Natsu Dragneel</h3>
 
-                <img src="images/Todd H..webp" alt="headshot of Todd H. the voice actor of Natsu Dragneel." height="50">
+                <img src="images/Todd.webp" alt="headshot of Todd H. the voice actor of Natsu Dragneel." height="50">
+                <img src="images/Natsu.jpg" alt="Natsu Dragneel" height="50">
 
-                <p>Todd H.</p>
+
+                <p>Todd Haberkorn</p>
 
                 <hr><!--Actor 4-->
                 <h3>Character Name: Happy</h3>
 
-                <img src="images/Tia B..webp" alt="headshot of Tia B. the voice actress of Happy." height="50">
+                <img src="images/Tia.webp" alt="headshot of Tia B. the voice actress of Happy." height="50">
+                <img src="images/Happy.webp" alt="Happy" height="50">
 
-                <p>Tia B.</p>
+
+                <p>Tia Ballard</p>
 
                 <hr><!--Actor 5-->
+                <h3>Character Name: Grey Fullbuster</h3>
 
+                <img src="images/Newton.webp" alt="headshot of Newton P. the voice actor of Gray Fullbuster." height="50">
+                <img src="images/Grey.jpg" alt="Gray Fullbuster" height="50">
+
+
+                <p>Newton Pittman</p>
+
+                <hr><!--Actor 6-->
+
+                <h3>Character Name: Wendy Marvel</h3>
+
+                <img src="images/Brittney.webp" alt="headshot of Britney K. the voice actress of Wendy Marvel." height="50">
+                <img src="images/wendy-marvell-5029902-normal.jpg" alt="Wendy Marvel" height="50">
+
+
+                <p>Britney Karbowski</p>
+                <hr>
+
+                <h3>Character Name: Carla</h3>
+
+                <img src="images/Jad.webp" alt="headshot of Jad S. the voice actress of Carla." height="50">
+                <img src="images/Carla.webp" alt="Carla" height="50">
+
+
+                <p>Jad Saxton</p>
 
             </div>
 
@@ -120,7 +216,7 @@
             <p>&copy; J BOWE | SE111.05 | Spring 2025</p>
 
              <!--VALIDATION SCREENSHOT IMAGE BELOW-->
-        <img src="" alt="validation of page" style="width:100%">
+        <img src="images/Website_cast.png" alt="validation of page" style="width:100%">
 
         </div>
 

@@ -5,16 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <meta name="author" content="-J Bowe">
-    <meta name="description" content="W4 Demo - Movie Site">
+    <meta name="description" content="W4 Demo - Movie">
 
-    <title>W4 | Movie Site</title>
+    <title>W4 | Fairy Tail: Dragon Cry</title> <!--Title tag does not respond to the <em> tag-->
 
+    <!--IN DOCUMENT CSS - helps check the mainframe wireframe-->
     <style>
         /*we are now writing CSS in this element. This is how you comment in CSS.*/
 
         /*selecting elements by thier tag type.*/
         body{
-            background-color:lightsteelblue ; font-family: Georgia, 'Times New Roman', Times, serif;
+            background-color:aliceblue ; font-family: Georgia, 'Times New Roman', Times, serif;
+            background-image: url('images/13783.jpg');
 
         }
 
@@ -34,7 +36,69 @@
             width:auto; /*equal left and right space when width is applied*/
 
             background-color: rgb(255, 255, 255) ;
-            color:darkorchid; font-family: Georgia, 'Times New Roman', Times, serif;/*color changes FONT color! */
+            color:rgb(86, 20, 119); font-family: Georgia, 'Times New Roman', Times, serif;/*color changes FONT color! */
+
+            width: 980px;
+            margin:auto; 
+
+            padding: 10px;
+        }
+
+        #nav {
+
+            border: 2px solid slateblue;
+            padding: 10px;
+            margin: 10px;
+
+            border-radius: 100px;
+
+            box-shadow: 5px 5px 3px rgb(58, 58, 58);
+
+        }
+
+        #buttons{
+
+            border: 1px solid plum;
+            height: 50px;
+
+            width: 510px;
+            margin: auto;
+
+        }
+
+        .nav-btn{
+
+            width: 150px;
+            height: 50px;
+
+            text-align: center; /*x-axis alighnment*/
+            line-height: 50px; /*y-axis nalignment, Must match height value if vertically centering*/
+
+            background-color:rgb(182, 130, 208);
+
+            float: left;
+            display: block;
+
+            margin-right: 10px;
+            margin-left: 10px;
+
+            text-decoration: none;
+
+            font-size: 24px;
+
+            font-family: Georgia, 'Times New Roman', Times, serif;
+
+        }
+
+        .nav-btn:hover{
+
+            background-color: blue;
+            color: rgb(120, 83, 13);
+
+            font-style:italic;
+
+            background-image: url('images/13783.jpg');
+
         }
 
         /*selecting a group by its .CLASS name*/
@@ -53,37 +117,41 @@
         <!--Header-->
         <div id="header">
             <h1><em>Fairy Tail: Dragon Cry</em></h1>
-            <h4><i>"Quote from movie"</i></h4>
+            <h4><i>"I wont stop fighting when im tired, I’ll stop fighting when you’ve shattered my heart into a thousand pieces!"</i></h4>
 
         </div>
 
         <!--Navigation-->
         <div id="nav">
+
+            <div id="buttons">
+
             <!--Relative links to all three site pages-->
-            <a href="index.html" class="nav-btn">Home</a>
-            <a href="cast.html" class="nav-btn">Cast</a>
-            <a href="review.html" class="nav-btn">Review</a>
+            <a href="index.html" class="nav-btn">HOME</a>
+            <a href="cast.html" class="nav-btn">CAST</a>
+            <a href="review.html" class="nav-btn">REVIEW</a>
+            </div>
+
         </div>
 
         <!--Content-->
         <div id="content">
-            <h2>All About <em>Movie I choose</em></h2>
+            <h2>All About <em>Fairy Tail: Dragon Cry</em></h2>
         </div>
 
         <!--Main Content-->
         <div id="main-content">
 
-            <p><i>brief 1-2 sentences summary of <em>movie</em></i></p>
+            <p><i><em>Fairy Tail :Dragon Cry</em> is centered on the adventure of the Fairy Tail cast to the kingdom of Stella. They are after a mythical artificat with the power to destroy the world, it is made up of the sorrows are pain of many slain dragons. <em>Fairy Tail: Dragon Cry</em></i></p>
 
             <img src="images/DragonCRy.jpg" alt="The offical Movie Poster for Fairy Tail Dragon Cry (2017)" style="width:90%;">
 
             <div class="info">
-                <p><b>LABEL:</b></p>
-                <p><b>RATING:</b></p>
-                <p><b>GENRE:</b></p>
-                <p><b>RUN TIME:</b></p>
-                <p><b>RELEASE DATE:</b></p>
-                <p><b>PRODUCTION COMPANY:</b></p>
+                <p><b>RATING:</b>TV-14</p>
+                <p><b>GENRE:</b>Fantasy, Action and Comedy</p>
+                <p><b>RUN TIME:</b>1 hour 25 minutes</p>
+                <p><b>RELEASE DATE:</b>May 6th, 2017</p>
+                <p><b>PRODUCTION COMPANY:</b>A-1 Pictures</p>
             </div>
 
 
@@ -98,7 +166,7 @@
             <p>&copy; J BOWE | SE111.05 | Spring 2025</p>
 
              <!--VALIDATION SCREENSHOT IMAGE BELOW-->
-        <img src="" alt="validation of page" style="width:100%">
+        <img src="images/Website_index.png" alt="validation of page" style="width:100%">
 
         </div>
 

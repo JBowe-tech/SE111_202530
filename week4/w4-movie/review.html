@@ -9,39 +9,102 @@
 
     <title>W4 | Movie Site</title>
 
-    <style>
-        /*we are now writing CSS in this element. This is how you comment in CSS.*/
+   <!--IN DOCUMENT CSS - helps check the mainframe wireframe-->
+   <style>
+    /*we are now writing CSS in this element. This is how you comment in CSS.*/
 
-        /*selecting elements by thier tag type.*/
-        body{
-            background-color:lightsteelblue ; font-family: Georgia, 'Times New Roman', Times, serif;
+    /*selecting elements by thier tag type.*/
+    body{
+        background-color:aliceblue ; font-family: Georgia, 'Times New Roman', Times, serif;
+        background-image: url('images/13783.jpg');
 
-        }
+    }
 
-        div {
-            /*these style changes will apply to ALL divs in the page! When selecting by tags of that type are affected*/
-            border: 1px solid black;
-            /*padding adds space between content and border*/
-            padding:10px; /*applies to all 4 sides; top, right, bottom, left*/
+    div {
+        /*these style changes will apply to ALL divs in the page! When selecting by tags of that type are affected*/
+        border: 1px solid black;
+        /*padding adds space between content and border*/
+        padding:10px; /*applies to all 4 sides; top, right, bottom, left*/
 
-            /*margin adds space between border and other elements*/
-            margin: 10px; /*applies to all 4 sides; top, right, bottom, left*/
+        /*margin adds space between border and other elements*/
+        margin: 10px; /*applies to all 4 sides; top, right, bottom, left*/
 
-        }
+    }
 
-        /*selecting an element by its #ID!*/
-        #wrapper{
-            width:auto; /*equal left and right space when width is applied*/
+    /*selecting an element by its #ID!*/
+    #wrapper{
+        width:auto; /*equal left and right space when width is applied*/
 
-            background-color: rgb(255, 255, 255) ;
-            color:darkorchid; font-family: Georgia, 'Times New Roman', Times, serif;/*color changes FONT color! */
-        }
+        background-color: rgb(255, 255, 255) ;
+        color:rgb(86, 20, 119); font-family: Georgia, 'Times New Roman', Times, serif;/*color changes FONT color! */
 
-        /*selecting a group by its .CLASS name*/
-        .border {
-            border:1px solid rgb(59, 8, 30) ;
-        }
+        width: 980px;
+        margin:auto; 
 
+        padding: 10px;
+    }
+
+    #nav {
+
+        border: 2px solid slateblue;
+        padding: 10px;
+        margin: 10px;
+
+        border-radius: 100px;
+
+        box-shadow: 5px 5px 3px rgb(58, 58, 58);
+
+    }
+
+    #buttons{
+
+        border: 1px solid plum;
+        height: 50px;
+
+        width: 510px;
+        margin: auto;
+
+    }
+
+    .nav-btn{
+
+        width: 150px;
+        height: 50px;
+
+        text-align: center; /*x-axis alighnment*/
+        line-height: 50px; /*y-axis nalignment, Must match height value if vertically centering*/
+
+        background-color:rgb(182, 130, 208);
+
+        float: left;
+        display: block;
+
+        margin-right: 10px;
+        margin-left: 10px;
+
+        text-decoration: none;
+
+        font-size: 24px;
+
+        font-family: Georgia, 'Times New Roman', Times, serif;
+
+    }
+
+    .nav-btn:hover{
+
+        background-color: blue;
+        color: rgb(120, 83, 13);
+
+        font-style: italic;
+
+        background-image: url('images/13783.jpg');
+
+    }
+
+    /*selecting a group by its .CLASS name*/
+    .border {
+        border:1px solid rgb(59, 8, 30) ;
+    }
     </style>
 
    </head>
@@ -53,21 +116,21 @@
         <!--Header-->
         <div id="header">
             <h1><em>Fairy Tail: Dragon Cry</em></h1>
-            <h4><i>"Quote from movie"</i></h4>
-
         </div>
 
         <!--Navigation-->
         <div id="nav">
-            <!--Relative links to all three site pages-->
-            <a href="index.html" class="nav-btn">Home</a>
-            <a href="cast.html" class="nav-btn">Cast</a>
-            <a href="review.html" class="nav-btn">Review</a>
+            <div id="buttons">
+                <!--Relative links to all three site pages-->
+                <a href="index.html" class="nav-btn">HOME</a>
+                <a href="cast.html" class="nav-btn">CAST</a>
+                <a href="review.html" class="nav-btn">REVIEW</a>
+            </div>
         </div>
 
         <!--Content-->
         <div id="content">
-            <h2>Review of <em>Movie I choose</em></h2>
+            <h2>Review of <em>Fairy Tail: Dragon Cry</em></h2>
         </div>
 
         <!--Main Content-->
@@ -75,18 +138,18 @@
 
             <p><b>Jayda Bowe</b> <i>April 14th, 2025</i> &#9733;&#9733;&#9733;&#9733;&#9733;</p>
 
-            <p> A 2-3 short paragraph review of <em>Fairy Tail: Dragon Cry</em></p>
+            <p> <em>Fairy Tail: Dragon Cry</em> is one of my favorite movies and Fairy Tail the anime is one of my favortie anime series, it is the first anime I finished on my own and was recommended to me by my cousin. Having said that I hold this movie close to my heart as it captures emotional moments of my favorite characters as well as their growth through the perils they faced. The fights between the main characters and villians in my opinion are very well animated and I enjoued watching them grow as they fought new stronger oponents. The movie isn't a completely joyful ride as it does contain violent dipictions. As the movie is also about an artifact created by pain and suffering the ending of the movie tha shows the release of the all the sorrow and anger contained in the object is refreshing and touching. Personally I loved watching it, when I was younder and watched it for the first time it really touvhed me as I watched Natsu cry for the fallen dragons that he felt so connected to although he never met any of them.  <em>Fairy Tail: Dragon Cry</em></p>
 
-            <p>Check out the <i>official</i> <a href="https://m.imdb.com/title/tt6548966/fullcredits/cast">IMDB page here!</a> </p>
+            <p>Check out the <i>official</i> <a href="https://m.imdb.com/title/tt6548966/fullcredits/cast" target="_blank">IMDB page here!</a> </p>
 
             <!--Trivia-->
             <div class="info">
 
                 <h3><em>Fairy Tail: Dragon Cry</em> Trivia!</h3>
                 <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
+                    <li>1. Dragon Cry ranked #10 opening week in Japan with 38 out of 101 theaters that screened the movie sold out.</li>
+                    <li>2. First anime-project Fairy Tail franchise's, in the creation of which participated personally Hiro Mashima. He not only produced the film, but also wrote his history in 200 pages and has worked actively over the key scenes.</li>
+                    <li>3. A certain character's past that is revealed in the movie which hasn't been touched in the manga. Along with this, there have been parts cut due to restraints while there are parts included only in the movie that the manga couldn't include.</li>
 
                 </ul>
 
@@ -103,7 +166,7 @@
             <p>&copy; J BOWE | SE111.05 | Spring 2025</p>
 
              <!--VALIDATION SCREENSHOT IMAGE BELOW-->
-        <img src="" alt="validation of page" style="width:100%">
+        <img src="images/Website_review.png" alt="validation of page" style="width:100%">
 
         </div>
 
