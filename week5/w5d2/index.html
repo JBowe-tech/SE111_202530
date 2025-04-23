@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>W5 | Tables & Forms</title>
+</head>
+<body>
+    
+    <h1>Basic Form Demo</h1>
+
+    <form>
+
+        <!--labels are used to match with input elements-->
+        <!--'for' attribute connects labels with the input values (matching 'name' atttribute value)-->
+
+        <label for="firstName">First Name: </label>
+        <input type="text" name="firstName" id="firstName">
+
+        <br>
+
+        <label for="lastName">Last Name: </label>
+        <input type="text" name="lastName" id="lastName">
+
+        <br>
+
+        <label for="age">Age: </label>
+        <input type="text" name="age" id="age">
+
+
+    </form>
+
+    <hr>
+
+
+    <h2>Form using a Table</h2>
+
+    <form method="get">
+
+        <table>
+
+            <tbody>
+
+                <!--Table Row-->
+                <tr>
+
+                    <!--first column - LABEL -->
+                    <td>
+                        <label for="fName">First Name:</label>
+                    </td>
+
+                    <!--second column- INPUT -->
+                    <td>
+                        <input type="text" name="fName" id="fName" placeholder="Jane" required>
+                    </td>
+
+                </tr>
+
+                <!--Table Row-->
+                <tr>
+
+                    <!--first column - LABEL -->
+                    <td>
+                        <label for="lName">Last Name:</label>
+                    </td>
+
+                    <!--second column- INPUT -->
+                    <td>
+                        <input type="text" name="lName" id="lName" placeholder="Doe">
+                    </td>
+
+                </tr>
+
+                <!--Table Row-->
+                <tr>
+
+                    <!--first column - LABEL -->
+                    <td>
+                        <label for="age">Age:</label>
+                    </td>
+
+                    <!--second column- INPUT -->
+                    <td>
+                        <input type="number" name="age" id="age" min="1">
+                    </td>
+
+                </tr>
+
+                <!--Table Row-->
+                <tr>
+
+                    <!--first column - LABEL -->
+                    <td>
+                        <label for="email">Email:</label>
+                    </td>
+
+                    <!--second column- INPUT -->
+                    <td>
+                        <input type="email" name="email" id="email" placeholder="yourEmail@email.com">
+                    </td>
+
+                </tr>
+
+                <!--Textboxes (comment boxes): allow for longer than a text field entry and require the <textarea> tag-->
+                <tr>
+
+                    <!--first column - LABEL -->
+                    <td>
+                        <label for="comments">Comments:</label>
+                    </td>
+
+                    <!--second column- INPUT -->
+                    <td>
+                        <textarea name="comments" id="comments" placeholder="Hello World!" rows="5" cols="25" style="font-family: Georgia, 'Times New Roman', Times, serif;"></textarea>
+                    </td>
+
+                </tr>
+
+                <!--NON TEXT BASED FORM ELEMENTS BELOW!-->
+
+                <!--DROP DOWNS: the <select> element allows us to create a drop down menu for our user to choose from!-->
+
+                    <!--LABEL / LEFT COLUMN-->
+                    <td>
+                        <br>
+                        <label for="faveColor">Pick Your Favorite Color</label>
+                    </td>
+
+                    <!--ENTRY / RIGHT COLUMN-->
+                    <td>
+                        <!--<select> works like a list type (ol/ul) and requires child <option> elements-->
+                            <br>
+                            <select name="faveColor" id="faveColor">
+                                <option value="red">RED</option>
+                                <option value="blue">BLUE</option>
+                                <option value="purple">PURPLE</option>
+                                <option value="pink">PINK</option>
+                                <option value="green">GREEN</option>
+                                <option value="yellow">YELLOW</option>
+                                <option value="white">WHITE</option>
+                                <option value="black">BLACK</option>
+                            </select>
+
+                    </td>
+
+                    <!--RADIO BUTONS: "multiple choice" small circular buttons; can only choose one out of the set-->
+
+                    <tr>
+                        <!--LABEL / LEFT COLUMN-->
+                        <td>
+                            <label for="study">Program of Study</label>
+                        </td>
+
+                        <td>
+                            <br>
+                            <!--a radio button set is grouped bu a matching NAME attribute value-->
+                            <input type="radio" name="study" value="SE">Software Engineering 
+                            <br>
+                            <input type="radio" name="study" value="CYB">Cyber Security 
+                            <br>
+                            <input type="radio" name="study" value="NE">Network Engineering
+
+                        </td>
+
+
+                    </tr>
+
+                    <!--CHECKBOXES: allow for multiple responses in one 'set'-->
+                    <tr>
+                        <td>
+                            <label for="vehicle">Select Your Vehicle(s)</label>
+                        </td>
+
+                        <td>
+                            <br>
+                            <input type="checkbox" name="vehicle" value="car">Car <br>
+                            <input type="checkbox" name="vehicle" value="roci">The Rocinante <br>
+                            <input type="checkbox" name="vehicle" value="bike">Bike <br>
+                            <input type="checkbox" name="vehicle" value="dragon">Dragon <br>
+                            <input type="checkbox" name="vehicle" value="horse">Buttercup the Horse <br>
+                            <input type="checkbox" name="vehicle" value="tank">Tank <br>
+
+                        </td>
+                    </tr>
+
+                    <!--DATE: creates a calender-->
+                    <tr>
+                        <td>
+                            <br>
+                            <label for="date">Date: </label>
+                        </td>
+
+                        <td>
+                            <br>
+                            <input type="date" name="date" id="date" value="2025-08-01">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <!--Submit Button - this activates the method and action of the form!-->
+    
+                        <!--first column - leave empty for table alignment -->
+                        <td>
+                        </td>
+    
+                        <!--second column- INPUT -->
+                        <td>
+                            <input type="submit" value="Submit :D">
+                        </td>
+    
+                    </tr>
+
+
+            </tbody>
+
+        </table>
+
+    </form>
+
+
+
+
+
+</body>
+</html>
