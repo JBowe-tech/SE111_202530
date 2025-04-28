@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Jayda Bowe">
+    <meta name="description" content="Week 6 JS Intro">
+    
+    <title>Week 6 | JS Intro</title>
+
+</head>
+<body>
+    
+    <!--we should have some sort of HTML in the file-->
+    <h1>Week 6 Intro Demo | Javascript</h1>
+
+    <!--IN-DOCUMENT JAVASCRIPT-->
+    <!--in-document: lives within the .html (you saw this with CSS)-->
+    <script>
+        //everything inside of the script tags MUST be written in JAVASCRIPT!
+        //documentation: / single line commenting in JS
+        
+        //creating a variable --> declare name first --> keyword "var"
+        var num1 = 10
+      
+        //once a name is declared, then it can be defined
+
+        var num2 = 7
+
+        //cannot use num1 or num2 in a process unless they have been DEFINED (value stored to them)
+        //define: assigned a value to
+        var sum = num1 + num2
+
+        //alert() allows for a pop-up in the browser page to display data
+        //alert() --> print() / OUTPUT
+        // ``denotes a literal string --> works similar to .format() in Python -- hold var names inside of ${VAR}
+        alert(`The sum is: \n${sum}`)
+
+        // escape sequences also work in Javascript --> \n (inside of strings!)
+
+
+        console.log(`hello there! the sum is ${sum}`)        //often used for testing
+        //no physical display, only found in the console 
+        //line 42 not read until alert is finished (or user click ok)
+
+        /* this is a multi line comment in JavaScript
+            to access the console via dev tools
+            *pree F12 OR right click --> inspect element
+            *Choose CONSOLE table at top right
+            *Refresh page :]
+
+
+
+        */
+        
+        //prompt() --> prompts user for a value; just like an alert(), wait for Enter/Ok
+        //prompt() --> Python's input()
+        prompt(`Enter your name: `) 
+
+
+        //store the value form prompt()
+        var name = prompt("Enter your name (again): ")
+
+        alert(`Hi there, ${name}!`)
+
+
+        //all data from prompt() is a STRING; must convert to Number() if wanting to do math
+
+        var num = Number(('Enter a number to square: '))
+
+        //convert num to an actual Number
+        //num = Number(num)
+
+        //num is now a NUMBER and can be used in a math process
+        var sqare = num * num
+
+        console.log(`The sqquare of ${num} is: \n ${sqare.toFixed(2)}`) //in console [inspect]
+
+
+    </script>
+
+
+
+
+</body>
+</html>
