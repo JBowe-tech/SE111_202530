@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Jayda Bowe">
+    <meta name="description" content="Week 6 Pay Calculator">
+    
+    <title>Week 6 | Pay Calculator</title>
+
+</head>
+<body>
+    
+    <!--we should have some sort of HTML in the file-->
+    <h1>Week 6 Demo | Pay Calculator</h1>
+
+    <!--IN-DOCUMENT JAVASCRIPT-->
+    <!--in-document: lives within the .html (you saw this with CSS)-->
+    <script>
+
+        var hr_pay = Number(prompt(`Please enter your hourly pay:  `))
+
+        var hr_work = Number(prompt(`Enter the amount of hours you work: `))
+
+        var tax_per = 20/100
+
+        var gross = hr_pay * hr_work
+
+        var tax = gross * tax_per
+
+        var tax_total = gross - tax
+
+        console.log(`Gross : $${gross.toFixed(2)}`)
+        console.log(`Uncle Sam's Share : $${tax.toFixed(2)}`)
+        console.log(`Net Pay : $${tax_total.toFixed(2)}`)
+
+        alert(`Gross : $${gross.toFixed(2)}`)
+        alert(`Uncle Sam's Share : $${tax.toFixed(2)}`)
+       alert(`Net Pay : $${tax_total.toFixed(2)}`)
+
+
+        
+
+    </script>
+
+
+
+
+</body>
+</html>
