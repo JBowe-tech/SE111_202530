@@ -54,7 +54,7 @@
         people.push("Cameron")
         console.log(`Array: ${people}\nArray length: ${people.length}`)
 
-        people.push(prompt("Enter your name to be added: "))
+        people.push("Elijah") //people.push(prompt("Enter name:"))
         console.log(`Array: ${people}\nArray length: ${people.length}`)
 
         //PARALELL STANDARD 1D ARRAYS-------------------------------------------------------
@@ -67,8 +67,8 @@
             "Surfs Up",
             "Sinners",
             "Alien",
-            "Hackers",
-            "Fave Movies"
+            "Jurassic Park",
+            "Spider-Man"
         ]
 
         //PROCESSING through ARRAYS---------------------------------------------------------
@@ -87,10 +87,108 @@
         output.innerHTML += `<p> ${people[index]}'s favorite movie is: <i>${faveMovies[index]}</i></p>`
     }
         
-        //ASSOCIATIVE ARRAYS----------------------------------------------------------------
+        //OBJECTS---------------------------------------------------------------------------        
+        var pets =  { 
+        //property : value
+        Katie: "George",
+        Ken: "Chopper",
+        Tyler: "Luna",
+        Hailey: "Daisy",
+        Keenan: "John",
+        Andrew: "Brody",
+        Jayda: "Zen",
+        ElijahS:  "River",
+        Cameron:  "Kenzi",
+        ElijahF:  "Mellow"
+    }
+
+    console.log(`Pets Objects: ${pets}`)//entire object collection; just states type
+    console.log(`First Value of Object: ${pets["Katie"]}`)//one value within the object
+
+    //utilizing dot syntax to access an objects's property's value:
+    console.log(`Last Value of Object: ${pets.ElijahF}`)
+    //objectName.propertyName
 
 
-        //OBJECTS---------------------------------------------------------------------------
-    </script>
+    //more of a real world object example
+   
+    //add a value to the playerCharacter
+    playerCharacter.damage = 3
+
+    //processing through objects --> for in loop needed
+    for(let key in playerCharacter){
+        //key = property
+        //"for every property in the object, do the following"
+
+        console.log(`${key}: ${playerCharacter[key]}`)
+
+    }
+
+    var playerCharacter ={
+        name: "John",
+        class: "Druid",
+        wildshape: "Tiger",
+        age: 2,
+        hp: 26,
+        level: 1,
+        spells: ["Shellelagh", "Ice Knife", "Speak to Animals"],
+
+        //this is how a method is born:
+        greeting: function (){
+            alert(`I am ${this.name}, hear me MEOW!`)
+        }
+    }
+    var enemyCharacter ={
+        name: "Johnathon",
+        class: "Skeleton",
+        age: 200,
+        hp: 16,
+        level: 5,
+        spells: ["Boo!", "Boon Pickaxe"],
+        //this is how a method is born:
+        greeting: function (){
+            alert(`I am ${this.name}, BoOOooOOoOoooO!`)
+        },
+        damage: 5
+
+    }
+
+    //properties are reusable:
+    console.log(`${playerCharacter.name} is ${playerCharacter.class}`)
+    console.log(`${enemyCharacter.name} is ${enemyCharacter.class}`)
+
+    playerCharacter.greeting() //method call tied to playerCharacter
+    enemyCharacter.greeting()
+
+    //Let's Put  It All Together! In order to process data structures populated with data structures --> we need LOOPCEPTION (loop inside of a loop)
+
+    var fight = [
+        playerCharacter, //fight[0]
+        enemyCharacter //fight[1]
+    ]
+
+    //creating an empty string to add data to during loopception
+    var dndOutput = ``
+
+    //process the data structure!
+    //main structure is a standard array, so outter for loop is set for that
+    for(let i = 0; i < fight.length; i++)
+    {
+        //this outter for loop controls which array value (object we are doing stuff to)
+        newOutput += `<hr><h3>INFO FOR: ${fight[i].name}</h3>`
+
+        //inner loop will look at EACH KEY in the CURRENT OBJECT - fight[i]
+        for(let key in fight[i])
+        {
+            dndOutput += `<p><b>${key}:</b> ${fight[i][key]}</p>`
+        }
+
+        dndOutput += `<hr>`
+    }
+
+    //write the info to the #output div
+     output.innerHTML += dndOutput
+    //document.querySelector(`#output`).innerHTML += newOutput    
+</script>
 </body>
 </html>
